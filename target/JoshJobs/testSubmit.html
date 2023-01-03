@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Use Anchor tag as Submit button</h2>
+        <form id="GFG" action="JobsEntryServlet" method="POST">
+            Username
+            <br />
+            <input type="text" name="UserName" id="UserName" />
+            <br />
+            Password
+            <br />
+            <input type="password" name="Password" id="Password" />
+            <br />
+            <a href="#" onclick="myFunction()">
+              Click here to submit form
+            </a>
+        </form>
+  
+        <script>
+            function myFunction() {
+                document.getElementById("GFG").submit();
+            }
+        </script>
+    </body>
+</html>

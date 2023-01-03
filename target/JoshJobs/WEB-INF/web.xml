@@ -1,0 +1,45 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+      <display-name>jobs-entry</display-name>
+      <distributable></distributable>
+      
+      
+    <servlet>
+         <servlet-name>JobsEntryServlet</servlet-name>
+         <servlet-class>com.web.jobsentry.servlet.JobsEntryServlet</servlet-class>
+         <load-on-startup>0</load-on-startup>
+     </servlet>
+    <servlet>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<display-name>LoginServlet</display-name>
+    	<description></description>
+    	<servlet-class>com.web.jobsentry.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>JobsApplyServlet</servlet-name>
+    	<display-name>JobsApplyServlet</display-name>
+    	<description></description>
+    	<servlet-class>com.web.jobsentry.servlet.JobsApplyServlet</servlet-class>
+    </servlet>
+     
+  
+  <servlet-mapping>
+       <servlet-name>JobsEntryServlet</servlet-name>
+       <url-pattern>/JobsEntryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>JobsApplyServlet</servlet-name>
+  	<url-pattern>/JobsApplyServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+ </welcome-file-list>
+ 
+ </web-app>
